@@ -346,6 +346,12 @@ h4
     background-position: center;
     background-size: cover;
 }
+#p-4
+{
+    background: url(./img/Trapo.png);
+    background-position: center;
+    background-size: cover;
+}
 .central-button
 {
     padding-top: 5vh;
@@ -672,11 +678,6 @@ footer
         grid-template-columns: 300px 300px ;
         gap: 40px;
     }
-    #p-5, #p-6
-    {
-        display: none;
-        
-    }
     #text
     {
         transform: translateY(0px);
@@ -855,9 +856,9 @@ footer
     .Grid-projetos
     {
         grid-template-columns: auto ;
-        grid-template-rows:   auto  auto  auto  auto  ;
+        grid-template-rows:   auto  auto  auto  auto  auto;
     }
-    #p-5, #p-6
+    #p-6
     {
         display: none;
     }
