@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -68,7 +69,7 @@
 
                 <div class="moldura" id="p-1">
 
-                    <a href="https://Talyson-Ferreira.github.io/formulario/"target="_blank">
+                    <a href="https://talyson-ferreira1.github.io/Formulario/"target="_blank">
               
                     <div class="text">
                         <h2>Formulário</h2>
@@ -78,7 +79,7 @@
                 </div>
                 <div class="moldura" id="p-2">
 
-                    <a href="https://Talyson-Ferreira.github.io/Tela-de-login-responsiva/"target="_blank">
+                    <a href="https://talyson-ferreira1.github.io/Login/"target="_blank">
               
                     <div class="text">
                         <h2>Tela de login</h2>
@@ -88,7 +89,7 @@
                 </div>
                 <div class="moldura" id="p-3">
 
-                    <a href=" https://Talyson-Ferreira.github.io/Rel-gio/"target="_blank">
+                    <a href="https://talyson-ferreira1.github.io/Relogio/"target="_blank">
               
                     <div class="text">
                         <h2>Relógio digital</h2>
@@ -148,18 +149,39 @@
                             <div class="circle1"></div>
                             <div class="circle2"></div>
                             <div class="circle3"></div>
+                            <div class="info">Passe o mouse por cima de alguma habilidade para ler a descrição </div>
                         </div>
                     
                         <div class="card-class">
-                            <div class="card" data-tilt><img src="./img/logo_html.webp"></div>
-                            <div class="card" data-tilt><img src="./img/logo-css.png"></div>
-                            <div class="card" data-tilt><img src="./img/logo-js.png"><div class="text-1"><span>Em estudo</span></div></div>
+                            <div class="card card-1" data-tilt onmouseover="html()" onmouseout="Html()">
+                                <img src="./img/logo_html.webp">
+                            </div> 
+
+                            <div class="card card-2" data-tilt onmouseover="css()" onmouseout="Css()">
+                                <img src="./img/logo-css.png">
+                            </div>
+                            
+                            <div class="card card-3" data-tilt onmouseover="js()" onmouseout="Js()">
+                                <img src="./img/logo-js.png"><div class="text-1"><span>Em estudo</span></div>
+                            </div>
+                            
+                            <div class="card card-4" data-tilt onmouseover="Git()" onmouseout="GIT()">
+                                <img src="./img/icons-git.png"><div class="text-1"><span>Em estudo</span></div>
+                            </div>
+
+                            <div class="card card-5" data-tilt onmouseover="github()" onmouseout="Github()">
+                                <img src="./img/icons-github-skills.png">
+                            </div>
                         </div>
                     </div>
-                    <div class="text-card" data-aos="fade-left">
-                        <p>Consigo reproduzir o layouts de alguns sites utilizando somente HMTL e CSS. Logo mais irei desenvolver outras aplicações com Javascript.
-                        </p>
-                    </div>
+                    <div class="text-card" >
+                        <div class="info-1">HTML é uma linguagem de marcação utilizada na construção de páginas na Web.</div>
+                        <div class="info-2">CSS é um mecanismo para adicionar estilo a um documento web. </div>
+                        <div class="info-3">Javascript é uma linguagem de programação. Juntamente com HTML e CSS, é uma das três principais tecnologias da web</div>
+                        <div class="info-4">Git é um sistema de controle de versões distribuído, usado principalmente no desenvolvimento de software, mas pode ser usado para registrar o histórico de edições de qualquer tipo de arquivo.</div>
+                        <div class="info-5">Github é uma plataforma de hospedagem de código-fonte e arquivos com controle de versão usando o Git.</div>
+
+                    </div> 
                 </div>
 
             </div>
@@ -169,7 +191,7 @@
     <footer>
         <div class="footer-class">
 
-            <a href="https://Talyson-Ferreira.github.io/contato/" alt="Enviar Email" target="_blank" onmouseover="email()" onmouseout="email1()" >
+            <a href="https://talyson-ferreira1.github.io/contato/" alt="Enviar Email" target="_blank" onmouseover="email()" onmouseout="email1()" >
                 <div class="t1">Enviar um e-mail</div>
                 <img src="./img/icons-email.png" >
             </a>
@@ -181,11 +203,11 @@
                 <div class="t3">Iniciar uma conversa no Whatsapp</div>
                 <img src="./img/icons-whatsapp.png">
             </a>
-            <a href="https://github.com/Talyson-Ferreira" alt="Github" target="_blank" onmouseover="git()" onmouseout="git1()">
+            <a href="https://github.com/Talyson-Ferreira1" alt="Github" target="_blank" onmouseover="git()" onmouseout="git1()">
                 <div class="t4">Perfil no Github</div>
                 <img src="./img/icons-github.png">
             </a>
-            <a href="https://Talyson-Ferreira.github.io/Curriculo/" alt="Currículo" target="_blank" onmouseover="Curriculo()" onmouseout="Curriculo1()">
+            <a href="https://talyson-ferreira1.github.io/Curriculo/" alt="Currículo" target="_blank" onmouseover="Curriculo()" onmouseout="Curriculo1()">
                 <div class="t5">Meu currículo digital</div>
                 <img src="./img/icons-curriculo.png">
             </a>
@@ -226,10 +248,12 @@
     var t3 = document.querySelector(".t3"); 
     var t4 = document.querySelector(".t4"); 
     var t5 = document.querySelector(".t5"); 
+     
 
 
-    function email(){ t1.style.display = "block"; }
-    function email1(){ t1.style.display = "none"; }
+    function email(){ t1.style.display = "block";}
+    function email1(){ t1.style.display = "none";}
+   
 
     function linkedin(){ t2.style.display = "block"; } 
     function linkedin1(){ t2.style.display = "none"; }
@@ -242,6 +266,29 @@
 
     function Curriculo(){ t5.style.display = "block"; }
     function Curriculo1(){ t5.style.display = "none"; }
+
+// descreve as habilidades
+    var info = document.querySelector(".info");
+    var info1 = document.querySelector(".info-1");
+    var info2 = document.querySelector(".info-2");
+    var info3 = document.querySelector(".info-3");
+    var info4 = document.querySelector(".info-4");
+    var info5 = document.querySelector(".info-5");
+    
+    function html(){ info1.style.display = "block"; }
+    function Html(){ info1.style.display = "none"; }
+
+    function css(){ info2.style.display = "block"; } 
+    function Css(){ info2.style.display = "none"; }
+
+    function js(){ info3.style.display = "block"; }
+    function Js(){ info3.style.display = "none"; }
+
+    function Git(){ info4.style.display = "block"; }
+    function GIT(){ info4.style.display = "none"; }
+
+    function github(){ info5.style.display = "block"; }
+    function Github(){ info5.style.display = "none"; }
 
 //----------------------------------------------------------------------------
 
