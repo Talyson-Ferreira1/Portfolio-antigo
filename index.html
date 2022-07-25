@@ -224,11 +224,13 @@
 //Esse código é responsável pelo efeito "maquina de escrever" da página ínicial
 
     function typeWriter(elemento){
-        const textArray = elemento.innerHTML.split('')
+        const textArray = elemento.innerHTML.split('');
         elemento.innerHTML = '';
         textArray.forEach((letra, i) => {
-            setTimeout(() => elemento.innerHTML += letra, 75 * i);
+            setTimeout(() => (elemento.innerHTML += letra), 75 * i);
         });
+        
+        setInterval(() => typeWriter(elemento), 3000);
     }
 
 
