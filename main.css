@@ -364,6 +364,12 @@ h4
     background-position: center;
     background-size: cover;
 }
+#p-5
+{
+    background: url(./img/vipcell-img.png);
+    background-position: center;
+    background-size: cover;
+}
 .central-button
 {
     padding-top: 5vh;
@@ -699,91 +705,7 @@ footer
       opacity: 1;
     }
 }
-
-@media (min-width:1500px) and (max-width:2640px)
-{
-    /*--------------------- HEADER -------------------------*/
-    #header
-    {
-        height: 100px;
-    }
-    header ul li a
-    {
-        font-size: 30px;
-    }
-    .logo img
-    {
-        width: 100px;
-        height: 100px;
-    }
-    /*--------------------- SECTION 1 -------------------------*/
-    .presentation h1 
-    {
-        font-size: 8rem;
-    }
-    .presentation h2
-    {
-        font-size: 2rem ;
-    }
-    /*--------------------- SECTION 2 -------------------------*/
-    h3
-    {
-        font-size: 5rem;
-    }
-    .sobre p 
-    {
-        font-size: 3rem;
-    }
-    .nav-sobre
-    {
-        height: 50px;
-        padding: 2rem;
-    }
-    .circle1, .circle2, .circle3 {
-        width:20px;
-        height:20px;
-    }
-    /*--------------------- SECTION 3 -------------------------*/
-    h4
-    {
-        font-size: 3rem;
-    }
-    .moldura 
-    {
-        width: 600px;
-        height: 250px;
-    }
-    .central-button button
-    {
-        width: 370px;
-        height: 60px;
-        font-size: 1.5rem;
-    }
-    .text-git 
-    {
-        font-size: 1rem;
-    }
-    /*--------------------- SECTION 4 -------------------------*/
-    .nav-sobre-2
-    {
-        padding: 2rem;
-    }
-    .container-sub p
-    {
-        font-size: 2rem;
-    }
-    .info-1,.info-2, .info-3, .info-4, .info-5
-    {
-        font-size: 2.5rem;
-    }
-     /*--------------------- FOOTER -------------------------*/
-     .footer-class img
-    {
-        width: 50px;
-        height: 50px;
-        
-    }
-}   
+ 
 @media (max-width:1190px)
 {
 
