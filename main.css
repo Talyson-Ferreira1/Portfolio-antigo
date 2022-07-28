@@ -806,6 +806,9 @@ footer
         height: 70px;
         width: 100%;
     }
+    header nav, header ul {
+        height: auto;
+    }
     #menu
     {
         display: block;
@@ -935,12 +938,9 @@ footer
     .Grid-projetos
     {
         grid-template-columns: auto ;
-        grid-template-rows:   auto  auto  auto  auto  auto;
+        grid-template-rows:   auto  auto  auto  auto  auto auto;
     }
-    #p-6
-    {
-        display: none;
-    }
+   
 
     /*------------ PAGE-4 ----------------------------*/
     .container-sub
