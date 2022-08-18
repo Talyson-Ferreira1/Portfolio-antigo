@@ -370,6 +370,12 @@ h4
     background-position: center;
     background-size: cover;
 }
+#p-6
+{
+    background: url(./img/excelly-img.png);
+    background-position: center;
+    background-size: cover;
+}
 .central-button
 {
     padding-top: 5vh;
