@@ -79,11 +79,11 @@
                 </div>
                 <div class="moldura" id="p-2">
 
-                    <a href="https://talyson-ferreira1.github.io/Login/"target="_blank">
+                    <a href="https://talyson-ferreira1.github.io/Login-e-Cadastro/"target="_blank">
               
                     <div class="text">
                         <h2>Tela de login</h2>
-                        <p>Esse projeto é uma tela de login dinâmica e responsiva.</p>
+                        <p>Esse projeto é uma tela de login dinâmica e responsiva com validação de e-mail, senha e nome de usuário, impedindo caracteres especiais..</p>
                     </div></a>
 
                 </div>
@@ -229,6 +229,22 @@
 
 
     <script>
+// Esse código esconde a navbar a partir do scroll
+        const navbar = document.querySelector('#header');
+        let prevScrollPos = window.pageYOffset;
+        
+        window.addEventListener('scroll', () =>{
+            let currentScrollPos =  window.pageYOffset;
+
+            if(prevScrollPos < currentScrollPos ){
+                navbar.classList.add('hide');
+            }else{
+                navbar.classList.remove('hide');
+            }
+            prevScrollPos = currentScrollPos;
+        })
+
+//-------------------------------------------------------------------------------
 
 //Esse código é responsável pelo efeito "maquina de escrever" da página ínicial
        
@@ -310,7 +326,8 @@
     const btnMobile = document.getElementById( 'btn-mobile');
 
     function toggleMenu(event){
-        if (event.type === 'touchstart')event.preventDefaut();
+        if (event.type === 'touchstart')
+        event.preventDefaut();
         const nav = document.getElementById('nav');
         nav.classList.toggle('active'); 
             

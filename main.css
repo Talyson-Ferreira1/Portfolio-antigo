@@ -37,6 +37,12 @@ body
     z-index: 1000;
     background-size: cover;
     position: fixed;
+    background: rgba(0, 0, 0, 0.413);
+}
+#header.hide
+{
+    transition: all .5s;
+    transform: translateY(-100%);
 }
 header nav, header ul
 {
@@ -47,19 +53,31 @@ header ul li
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 header ul li a
 {
+
     color: white;
     text-decoration: none;
     font-size: 20px;
 }
-
-header ul li:hover
+header ul li::after
 {
-    transform: scale(1.09, 1.09);
-    border-bottom: 1px solid #fff;
+    position: absolute;
+    content: '';
+    width: 0px;
+    height: 1px;
+    bottom: 0;
+    background:#fff ;
+    transition: all .5s;
 }
+header ul li:hover::after
+{
+    width: 100%;
+
+}
+
 .logo img
 {
     width: 70px;
@@ -351,7 +369,7 @@ h4
 }
 #p-2
 {
-    background: url(./img/login-thumb.png);
+    background: url(./img/login-thumb\ \(2\).png);
     background-position: center;
     background-size: cover;
 }
